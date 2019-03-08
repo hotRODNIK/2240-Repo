@@ -1,0 +1,1 @@
+Larman, Craig. "Applying UML and Patterns." Pearson Education, 2005. => Helped with UML notations

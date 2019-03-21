@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:id="handleLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleLogin" prefHeight="389.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="117.0" layoutY="257.0" mnemonicParsing="false" text="Login" />
+      <Button layoutX="306.0" layoutY="257.0" mnemonicParsing="false" text="Quit" />
+      <Label layoutX="88.0" layoutY="27.0" prefHeight="72.0" prefWidth="240.0" text="ProducePOS ">
+         <font>
+            <Font name="Gabriola" size="59.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="63.0" text="v1.0">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="138.0" layoutY="139.0" />
+      <TextField layoutX="138.0" layoutY="195.0" />
+      <Label layoutX="59.0" layoutY="145.0" text="User ID" />
+      <Label layoutX="42.0" layoutY="201.0" text="Password" />
+      <Label layoutX="362.0" layoutY="355.0" text="© 2019 Group 5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

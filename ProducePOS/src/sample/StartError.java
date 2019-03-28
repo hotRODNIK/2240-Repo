@@ -5,9 +5,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class StartError {
+class StartError {
     private static Stage primaryStage = new Stage();
-    public void start() throws Exception {
+    void start() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("ErrorWindow.fxml"));
         primaryStage.setTitle("Error");
         primaryStage.setScene(new Scene(root, 350, 150));
@@ -15,7 +15,7 @@ public class StartError {
         primaryStage.show();
     }
 
-    public static void killProcess(){
+    static void killProcess(){
         primaryStage.close();
     }
 }

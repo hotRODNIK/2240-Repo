@@ -4,8 +4,8 @@
 <?import javafx.scene.layout.*?>
 
 
-<Pane fx:controller="sample.Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+<Pane fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
       prefHeight="190.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <Label layoutX="46.0" layoutY="35.0" text="Invalid User Name or Password."/>
-   <Button prefHeight="39.0" prefWidth="77.0" layoutX="90.0" layoutY="85.0" mnemonicParsing="false" text="OK"/>
+   <Button prefHeight="39.0" prefWidth="77.0" layoutX="90.0" layoutY="85.0" mnemonicParsing="false" text="OK" onAction="#quitBadLogin"/>
 </Pane>

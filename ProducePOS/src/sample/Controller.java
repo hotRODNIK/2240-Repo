@@ -1,6 +1,6 @@
 package sample;
 
-import java.sql.*;
+// import java.sql.*;
 import javafx.fxml.FXML;
 
 public class Controller {
@@ -38,5 +38,17 @@ public class Controller {
     @FXML void quitReturn() throws Exception{
         new StartMain().start();
         StartReturn.killProcess();
+    }
+
+    @FXML void quitError(){
+        StartError.killProcess();
+    }
+
+    @FXML void quitBadCode(){
+        StartBadCode.killProcess();
+    }
+
+    @FXML void quitBadLogin(){
+        StartBadLogin.killProcess();
     }
 }

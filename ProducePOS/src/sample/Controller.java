@@ -22,5 +22,18 @@ public class Controller {
         StartMain.killProcess();
     }
 
+    @FXML void handleToMain()throws Exception{
+        StartSale.killProcess();
+        new StartMain().start();
+    }
 
+    @FXML void launchReturn() throws Exception{
+        new StartReturn().start();
+        StartMain.killProcess();
+    }
+
+    @FXML void quitReturn() throws Exception{
+        new StartMain().start();
+        StartReturn.killProcess();
+    }
 }

@@ -10,7 +10,8 @@ public class StartReturn {
     void start() throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("ReturnScreen.fxml"));
         primaryStage.setTitle("Welcome");
-        primaryStage.setScene(new Scene(root, 375, 375));
+        primaryStage.setScene(new Scene(root, 700, 600));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

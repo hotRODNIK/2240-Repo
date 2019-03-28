@@ -11,6 +11,7 @@ class StartMain {
         Parent root = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
         primaryStage.setTitle("Welcome");
         primaryStage.setScene(new Scene(root, 375, 375));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

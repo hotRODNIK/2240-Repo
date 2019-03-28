@@ -2,6 +2,7 @@ package sample;
 
 import java.sql.*;
 import javafx.fxml.FXML;
+import javafx.stage.Stage;
 
 public class Controller {
     @FXML
@@ -10,7 +11,6 @@ public class Controller {
     }
 
     @FXML void handleLogin() throws Exception {
-        
         new StartMain().start();
     }
 

@@ -12,6 +12,9 @@ public class Controller {
 
     @FXML void handleLogin() throws Exception {
         new StartMain().start();
+        new StartBadLogin().start();
+        new StartBadCode().start();
+        new StartError().start();
     }
 
     @FXML void handleMainScreenExit(){

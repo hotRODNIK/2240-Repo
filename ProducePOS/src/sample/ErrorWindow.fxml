@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="86.0" layoutY="65.0" text="An error has occurred." />
-      <Button layoutX="151.0" layoutY="124.0" mnemonicParsing="false" text="Ok" />
-   </children>
+<Pane fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="224.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1">
+   <Label layoutX="86.0" layoutY="65.0" text="An error has occurred."/>
+   <Button layoutX="151.0" layoutY="124.0" mnemonicParsing="false" text="Ok"/>
 </Pane>

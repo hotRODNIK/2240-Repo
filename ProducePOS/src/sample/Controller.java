@@ -1,5 +1,6 @@
 package sample;
 
+import java.sql.*;
 import javafx.fxml.FXML;
 
 public class Controller {
@@ -9,7 +10,7 @@ public class Controller {
     }
 
     @FXML void handleLogin() throws Exception {
-        //Main.killProcess();
+        
         new StartMain().start();
     }
 

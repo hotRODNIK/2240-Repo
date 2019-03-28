@@ -1,3 +1,3 @@
 Larman, Craig. "Applying UML and Patterns." Pearson Education, 2005. => Helped with UML notations
-Amazon and Produce Codes Website
+Amazon and Produce Codes Website for Produce Codes
 http://www.java2s.com/Code/Java/JavaFX/Stagecloseevent.htm => Used for documentation on how to close a single stage

@@ -2,7 +2,6 @@ package sample;
 
 import java.sql.*;
 import javafx.fxml.FXML;
-import javafx.stage.Stage;
 
 public class Controller {
     @FXML

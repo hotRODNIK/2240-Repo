@@ -18,7 +18,7 @@
          <Font name="Impact" size="22.0"/>
       </font>
    </Label>
-   <Button layoutX="133.0" layoutY="120.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="77.0" text="Sale"/>
+   <Button layoutX="133.0" layoutY="120.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="77.0" text="Sale" onAction="#handleSaleScreen"/>
    <Button layoutX="133.0" layoutY="181.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="77.0" text="Return"/>
    <Button layoutX="133.0" layoutY="246.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="77.0" text="Quit" onAction="#handleMainScreenExit"/>
 </Pane>

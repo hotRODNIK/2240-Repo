@@ -9,12 +9,18 @@ public class Controller {
     }
 
     @FXML void handleLogin() throws Exception {
-        Main.killProcess();
+        //Main.killProcess();
         new StartMain().start();
     }
 
     @FXML void handleMainScreenExit(){
         StartMain.killProcess();
     }
+
+    @FXML void handleSaleScreen()throws Exception{
+        new StartSale().start();
+        StartMain.killProcess();
+    }
+
 
 }

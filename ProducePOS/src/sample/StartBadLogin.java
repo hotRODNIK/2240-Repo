@@ -9,8 +9,8 @@ public class StartBadLogin {
     private static Stage primaryStage = new Stage();
     public void start() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("BadLogin.fxml"));
-        primaryStage.setTitle("Login");
-        primaryStage.setScene(new Scene(root, 400, 330));
+        primaryStage.setTitle("Bad Login");
+        primaryStage.setScene(new Scene(root, 250, 150));
         primaryStage.setResizable(false);
         primaryStage.show();
     }

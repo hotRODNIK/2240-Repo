@@ -10,7 +10,7 @@ public class StartError {
     public void start() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("ErrorWindow.fxml"));
         primaryStage.setTitle("Error");
-        primaryStage.setScene(new Scene(root, 400, 330));
+        primaryStage.setScene(new Scene(root, 350, 150));
         primaryStage.setResizable(false);
         primaryStage.show();
     }

@@ -7,5 +7,5 @@
 <Pane fx:controller="sample.Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
       prefHeight="190.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <Label layoutX="46.0" layoutY="55.0" text="Invalid User Name or Password."/>
-   <Button layoutX="156.0" layoutY="105.0" mnemonicParsing="false" text="Ok"/>
+   <Button prefHeight="39.0" prefWidth="77.0" layoutX="156.0" layoutY="105.0" mnemonicParsing="false" text="OK"/>
 </Pane>

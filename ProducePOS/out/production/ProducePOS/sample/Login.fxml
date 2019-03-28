@@ -2,14 +2,13 @@
 
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
 
 <Pane fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
       prefHeight="389.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <Button layoutX="117.0" layoutY="257.0" mnemonicParsing="false" text="Login" onAction="#handleLogin"/>
-   <Button layoutX="306.0" layoutY="257.0" mnemonicParsing="false" text="Quit" onAction="#handleLoginExit"/>
+   <Button layoutX="90.0" layoutY="257.0" mnemonicParsing="false" text="Login" prefHeight="39.0" prefWidth="77.0" onAction="#handleLogin"/>
+   <Button layoutX="260.0" layoutY="257.0" mnemonicParsing="false" text="Quit" prefHeight="39.0" prefWidth="77.0" onAction="#handleLoginExit"/>
    <Label layoutX="88.0" layoutY="27.0" prefHeight="72.0" prefWidth="240.0" text="ProducePOS ">
       <font>
          <Font name="Gabriola" size="59.0"/>

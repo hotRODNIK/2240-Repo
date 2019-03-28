@@ -9,7 +9,7 @@ class StartSale {
     private static Stage primaryStage = new Stage();
     void start() throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("SaleScreen.fxml"));
-        primaryStage.setTitle("Welcome");
+        primaryStage.setTitle("ProducePOS:Sale");
         primaryStage.setScene(new Scene(root, 700, 600));
         primaryStage.setResizable(false);
         primaryStage.show();

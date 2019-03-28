@@ -8,7 +8,7 @@
 
 <Pane fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0"
       prefWidth="343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <Label layoutX="40.0" layoutY="21.0" text="ProductPOS">
+   <Label layoutX="40.0" layoutY="21.0" text="ProducePOS">
       <font>
          <Font name="Gabriola" size="59.0"/>
       </font>

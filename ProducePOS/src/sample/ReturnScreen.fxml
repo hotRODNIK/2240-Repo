@@ -20,9 +20,9 @@
    <TextField layoutX="313.0" layoutY="135.0"/>
    <Label layoutX="71.0" layoutY="141.0" text="Enter SKU, then press enter"/>
    <TextArea editable="false" layoutX="21.0" layoutY="215.0" prefHeight="148.0" prefWidth="279.0"/>
-   <Button layoutX="100.0" layoutY="381.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="122.0" text="Void All"/>
-   <Button layoutX="417.0" layoutY="381.0" mnemonicParsing="false" text="Complete Refund"/>
-   <Button layoutX="417.0" layoutY="439.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="163.0" text="Quit"
+   <Button layoutX="50.0" layoutY="381.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="163.0" text="Void All"/>
+   <Button layoutX="237.0" layoutY="381.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="163.0" text="Complete Refund"/>
+   <Button layoutX="435.0" layoutY="381.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="163.0" text="Quit"
            onAction="#quitReturn"/>
    <TextField editable="false" layoutX="414.0" layoutY="223.0"/>
    <TextField editable="false" layoutX="414.0" layoutY="269.0"/>

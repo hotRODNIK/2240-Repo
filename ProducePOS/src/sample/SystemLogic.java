@@ -9,9 +9,29 @@ public class SystemLogic {
         return subTotal * 0.13;
     }
 
-    public boolean login(String userID, String pass){
-        return true;
-        // connect to database
+    static boolean login(String userID, String pass) throws Exception {
+        boolean idNotFound = false, passNotFound = false, canLogin = false;
+        try{
+            Connection c = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nick\\Desktop\\2240-Repo\\ProducePOS\\src\\sample\\EmployeeBase.db");
+            Statement s = c.createStatement();
+            ResultSet r = s.executeQuery("SELECT * FROM empInfo");
+            while(r.next() && !idNotFound && !passNotFound){
+                String id = r.getString("Login");
+                String passWord = r.getString("Pass");
+                if (id.equals(userID) && pass.equals(passWord)){
+                    idNotFound = true;
+                    passNotFound = true;
+                    canLogin = true;
+                }
+            }
+            s.close();
+            c.close();
+
+        }
+        catch (SQLException e){
+            new StartError().start();
+        }
+        return canLogin;
     }
 
     public boolean scan(String code){

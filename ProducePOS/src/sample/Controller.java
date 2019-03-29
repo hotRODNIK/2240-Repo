@@ -9,7 +9,11 @@ public class Controller {
     }
 
     @FXML void handleLogin() throws Exception{
-        new StartMain().start();
+        boolean login = SystemLogic.login("bsmith", "df");
+        if (login)
+            new StartMain().start();
+        else
+            new StartBadLogin().start();
     }
 
     @FXML void handleMainScreenExit(){

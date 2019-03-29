@@ -3,20 +3,23 @@ package sample;
 import java.sql.*;
 
 public class SystemLogic {
-    private double tax, total, subTotal, itemPrice;
+    private double total, subTotal, itemPrice;
 
-    public double calcTax(){
-        return tax;
-        // calculate tax and set a value
+    public String calcTax(){
+        double tax;
+        tax = subTotal * 0.13;
+        total = subTotal + tax;
+        return String.valueOf(tax);
     }
 
     public boolean login(String userID, String pass){
         return true;
+        // connect to database
     }
 
     public boolean scan(String code){
         return true;
-        // set a value for itemprice based off of if the code was found in db
+        // set a value for itemPrice based off of if the code was found in db
     }
 
     public String calcSubTotal(){
@@ -25,6 +28,7 @@ public class SystemLogic {
     }
 
     public String calcTotal(){
-        return String.valueOf(total); // if statement to deal with change
+        return String.valueOf(total);
+        // if statement to deal with change
     }
 }

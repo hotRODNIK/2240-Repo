@@ -1,6 +1,5 @@
 package sample;
 
-// import java.sql.*;
 import javafx.fxml.FXML;
 
 public class Controller {

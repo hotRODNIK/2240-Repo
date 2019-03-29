@@ -31,7 +31,7 @@
    <Label layoutX="357.0" layoutY="275.0" text="Tax"/>
    <Label layoutX="350.0" layoutY="324.0" text="Total"/>
    <TextField editable="false" layoutX="414.0" layoutY="318.0"/>
-   <TextField editable="false" layoutX="413.0" layoutY="366.0" />
+   <TextField layoutX="413.0" layoutY="366.0" />
    <Label layoutX="321.0" layoutY="372.0" text="Amt Paid"/>
    <TextField editable="false" layoutX="413.0" layoutY="415.0" />
    <Label layoutX="308.0" layoutY="421.0" text="Change Due"/>

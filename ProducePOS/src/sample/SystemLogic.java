@@ -5,11 +5,8 @@ import java.sql.*;
 public class SystemLogic {
     private double total, subTotal, itemPrice;
 
-    public String calcTax(){
-        double tax;
-        tax = subTotal * 0.13;
-        total = subTotal + tax;
-        return String.valueOf(tax);
+    private double calcTax(){
+        return subTotal * 0.13;
     }
 
     public boolean login(String userID, String pass){
@@ -28,7 +25,16 @@ public class SystemLogic {
     }
 
     public String calcTotal(){
+        total = subTotal + calcTax();
         return String.valueOf(total);
-        // if statement to deal with change
+    }
+
+    public String pay(String amt){
+        double tender = Double.parseDouble(amt);
+        double change = tender - total;
+        if (change == 0.00)
+            return "Have a nice day";
+        else
+            return String.valueOf(change);
     }
 }

@@ -19,8 +19,8 @@
          <Font name="Impact" size="24.0"/>
       </font>
    </Label>
-   <TextField layoutX="138.0" layoutY="139.0"/>
-   <TextField layoutX="138.0" layoutY="195.0"/>
+   <TextField fx:id="userIn" layoutX="138.0" layoutY="139.0"/>
+   <TextField fx:id="passIn" layoutX="138.0" layoutY="195.0"/>
    <Label layoutX="59.0" layoutY="145.0" text="User ID"/>
    <Label layoutX="42.0" layoutY="201.0" text="Password"/>
 </Pane>

@@ -10,7 +10,7 @@ class StartMain {
     void start() throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
         primaryStage.setTitle("Welcome");
-        primaryStage.setScene(new Scene(root, 350, 375));
+        primaryStage.setScene(new Scene(root, 343, 267));
         primaryStage.setResizable(false);
         primaryStage.show();
     }

@@ -1,32 +1,63 @@
 package sample;
 
 import java.sql.*;
+import java.text.DecimalFormat;
 
-public class SystemLogic {
-    private double total, subTotal, itemPrice;
+class SystemLogic {
+    private static double total, subTotal, itemPrice;
+    private static String name, lookName, lookPrice;
 
-    private double calcTax(){
+    static String getLookName(){ return lookName; }
+
+    static String getLookPrice(){
+        return lookPrice;
+    }
+
+    static double getTotal(){
+        return total;
+    }
+
+    static double getSubTotal(){
+        return subTotal;
+    }
+
+  static void voidAll(){
+        total = 0.0;
+        subTotal = 0.0;
+        subTotal = 0.0;
+        itemPrice = 0.0;
+        name = null;
+    }
+
+    static String getName() {
+        return name;
+    }
+
+    static double getItemPrice() {
+        return itemPrice;
+    }
+
+    private static double calcTax(){
         return subTotal * 0.13;
     }
 
     static boolean login(String userID, String pass) throws Exception {
-        boolean idNotFound = false, passNotFound = false, canLogin = false;
+        boolean canLogin = false;
         try{
+            // you will need to change this path based on what directory the database is saved in on your machine
+            // i am not going to tech support you on this!!!
             Connection c = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nick\\Desktop\\2240-Repo\\ProducePOS\\src\\sample\\EmployeeBase.db");
             Statement s = c.createStatement();
             ResultSet r = s.executeQuery("SELECT * FROM empInfo");
-            while(r.next() && !idNotFound && !passNotFound){
+            while(r.next() && !canLogin){
                 String id = r.getString("Login");
                 String passWord = r.getString("Pass");
                 if (id.equals(userID) && pass.equals(passWord)){
-                    idNotFound = true;
-                    passNotFound = true;
                     canLogin = true;
                 }
             }
             s.close();
             c.close();
-
         }
         catch (SQLException e){
             new StartError().start();
@@ -34,27 +65,76 @@ public class SystemLogic {
         return canLogin;
     }
 
-    public boolean scan(String code){
-        return true;
-        // set a value for itemPrice based off of if the code was found in db
+    static boolean scan(String code) throws Exception {
+        boolean isFound = false;
+        try{
+            // you will need to change this path based on what directory the database is saved in on your machine
+            // i am not going to tech support you on this!!!
+            Connection c = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nick\\Desktop\\2240-Repo\\ProducePOS\\src\\sample\\ProductBase.db");
+            Statement s = c.createStatement();
+            ResultSet r = s.executeQuery("SELECT * FROM pluTable");
+            while(r.next() && !isFound){
+                name = r.getString("prodName");
+                String prodCode= r.getString("prodCode");
+                itemPrice = Double.parseDouble(r.getString("price"));
+                if (prodCode.equals(code)){
+                    isFound = true;
+                }
+            }
+            s.close();
+            c.close();
+        }
+        catch (SQLException e){
+            new StartError().start();
+        }
+        return isFound;
     }
 
-    public String calcSubTotal(){
+    static double calcSubTotal(){
         subTotal += itemPrice;
-        return String.valueOf(subTotal);
+        return subTotal;
     }
 
-    public String calcTotal(){
+    static double calcTotal(){
         total = subTotal + calcTax();
-        return String.valueOf(total);
+        return total;
     }
 
-    public String pay(String amt){
-        double tender = Double.parseDouble(amt);
-        double change = tender - total;
-        if (change == 0.00)
-            return "Have a nice day";
+    static String pay(double amt){
+        DecimalFormat df = new DecimalFormat("#.##");
+        total = Double.parseDouble(df.format(total));
+        if (amt > total){
+            double change = amt - total;
+            return df.format(change);
+        }
+        else if (amt == total)
+            return "0.00";
         else
-            return String.valueOf(change);
+            return "Really!";
+    }
+
+    static boolean lookup(String query) throws Exception {
+        boolean isFound = false;
+        try{
+            // you will need to change this path based on what directory the database is saved in on your machine
+            // i am not going to tech support you on this!!!
+            Connection c = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nick\\Desktop\\2240-Repo\\ProducePOS\\src\\sample\\ProductBase.db");
+            Statement s = c.createStatement();
+            ResultSet r = s.executeQuery("SELECT * FROM pluTable");
+            while(r.next() && !isFound){
+                lookName = r.getString("prodName");
+                String prodCode= r.getString("prodCode");
+                lookPrice = r.getString("price");
+                if (prodCode.equals(query)){
+                    isFound = true;
+                }
+            }
+            s.close();
+            c.close();
+        }
+        catch (SQLException e){
+            new StartError().start();
+        }
+        return isFound;
     }
 }

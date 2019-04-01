@@ -5,12 +5,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-class StartReturn {
+class StartLookup {
     private static Stage primaryStage = new Stage();
-    void start() throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("ReturnScreen.fxml"));
-        primaryStage.setTitle("ProducePOS:Return");
-        primaryStage.setScene(new Scene(root, 600, 500));
+    void start() throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("PLULookup.fxml"));
+        primaryStage.setTitle("PLU Lookup");
+        primaryStage.setScene(new Scene(root, 325, 300));
         primaryStage.setResizable(false);
         primaryStage.show();
     }

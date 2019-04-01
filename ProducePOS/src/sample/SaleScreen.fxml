@@ -4,10 +4,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-      minWidth="-Infinity" prefHeight="613.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/8"
-      xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0"
+      prefWidth="672.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controller">
    <Label layoutX="192.0" layoutY="25.0" text="ProducePOS">
       <font>
          <Font name="Gabriola" size="59.0"/>
@@ -18,26 +17,29 @@
          <Font name="Impact" size="19.0"/>
       </font>
    </Label>
-   <TextField layoutX="313.0" layoutY="135.0"/>
-   <Label layoutX="71.0" layoutY="141.0" text="Enter SKU, then press enter"/>
-   <TextArea editable="false" layoutX="21.0" layoutY="215.0" prefHeight="322.0" prefWidth="279.0"/>
-   <Button layoutX="100.0" layoutY="553.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="122.0" text="Void All"/>
-   <Button layoutX="309.0" layoutY="553.0" mnemonicParsing="false"  prefHeight="39.0" prefWidth="122.0" text="Finish &amp; Pay"/>
-   <Button layoutX="516.0" layoutY="553.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="122.0" text="Quit"
-           onAction="#handleToMain"/>
-   <TextField editable="false" layoutX="414.0" layoutY="223.0"/>
-   <TextField editable="false" layoutX="414.0" layoutY="269.0"/>
+   <TextField fx:id="codeIn" layoutX="313.0" layoutY="135.0"/>
+   <Label layoutX="71.0" layoutY="141.0" text="Enter PLU or UPC, then press Scan"/>
+   <TextArea fx:id="productNames" editable="false" layoutX="21.0" layoutY="215.0" prefHeight="322.0" prefWidth="279.0"/>
+   <Button disable="true" fx:id="voidAll" layoutX="100.0" layoutY="553.0" mnemonicParsing="false" prefHeight="39.0"
+           prefWidth="122.0" text="Void All" onAction="#voidAll"/>
+   <Button disable="true" fx:id="pay" layoutX="309.0" layoutY="553.0" mnemonicParsing="false" prefHeight="39.0"
+           prefWidth="122.0" text="Finish &amp; Pay" onAction="#handleFinish"/>
+   <Button layoutX="516.0" layoutY="553.0" mnemonicParsing="false" onAction="#handleToMain" prefHeight="39.0"
+           prefWidth="122.0" text="Quit"/>
+   <TextField fx:id="subTotal" editable="false" layoutX="414.0" layoutY="223.0"/>
+   <TextField fx:id="tax" editable="false" layoutX="414.0" layoutY="269.0"/>
    <Label layoutX="324.0" layoutY="229.0" text="Subtotal"/>
    <Label layoutX="357.0" layoutY="275.0" text="Tax"/>
    <Label layoutX="350.0" layoutY="324.0" text="Total"/>
-   <TextField editable="false" layoutX="414.0" layoutY="318.0"/>
-   <TextField layoutX="413.0" layoutY="366.0" />
+   <TextField fx:id="total" editable="false" layoutX="414.0" layoutY="318.0"/>
+   <TextField fx:id="paid" layoutX="413.0" layoutY="366.0"/>
    <Label layoutX="321.0" layoutY="372.0" text="Amt Paid"/>
-   <TextField editable="false" layoutX="413.0" layoutY="415.0" />
+   <TextField fx:id="change" editable="false" layoutX="413.0" layoutY="415.0"/>
    <Label layoutX="308.0" layoutY="421.0" text="Change Due"/>
    <Label layoutX="270.0" layoutY="80.0" text="Sale Mode">
       <font>
          <Font size="23.0"/>
       </font>
    </Label>
+   <Button layoutX="559.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleScan" text="Scan"/>
 </Pane>

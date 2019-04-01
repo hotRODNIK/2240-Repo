@@ -2,12 +2,11 @@
 
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0"
-      prefWidth="343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0"
+      prefWidth="343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controller">
    <Label layoutX="40.0" layoutY="21.0" text="ProducePOS">
       <font>
          <Font name="Gabriola" size="59.0"/>
@@ -18,7 +17,10 @@
          <Font name="Impact" size="22.0"/>
       </font>
    </Label>
-   <Button layoutX="133.0" layoutY="120.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="77.0" text="Sale" onAction="#handleSaleScreen"/>
-   <Button layoutX="133.0" layoutY="181.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="77.0" text="Return" onAction="#launchReturn"/>
-   <Button layoutX="133.0" layoutY="246.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="77.0" text="Quit" onAction="#handleMainScreenExit"/>
+   <Button layoutX="112.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleSaleScreen" prefHeight="39.0"
+           prefWidth="119.0" text="Sale"/>
+   <Button layoutX="112.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleMainScreenExit" prefHeight="39.0"
+           prefWidth="119.0" text="Quit"/>
+   <Button layoutX="112.0" layoutY="159.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" text="PLU Lookup"
+           onAction="#launchLookup"/>
 </Pane>

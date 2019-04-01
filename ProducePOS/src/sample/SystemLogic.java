@@ -46,7 +46,7 @@ class SystemLogic {
         try{
             // you will need to change this path based on what directory the database is saved in on your machine
             // i am not going to tech support you on this!!!
-            Connection c = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nick\\Desktop\\2240-Repo\\ProducePOS\\src\\sample\\EmployeeBase.db");
+            Connection c = DriverManager.getConnection("jdbc:sqlite:EmployeeBase.db");
             Statement s = c.createStatement();
             ResultSet r = s.executeQuery("SELECT * FROM empInfo");
             while(r.next() && !canLogin){
@@ -70,7 +70,7 @@ class SystemLogic {
         try{
             // you will need to change this path based on what directory the database is saved in on your machine
             // i am not going to tech support you on this!!!
-            Connection c = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nick\\Desktop\\2240-Repo\\ProducePOS\\src\\sample\\ProductBase.db");
+            Connection c = DriverManager.getConnection("jdbc:sqlite:ProductBase.db");
             Statement s = c.createStatement();
             ResultSet r = s.executeQuery("SELECT * FROM pluTable");
             while(r.next() && !isFound){
@@ -118,7 +118,7 @@ class SystemLogic {
         try{
             // you will need to change this path based on what directory the database is saved in on your machine
             // i am not going to tech support you on this!!!
-            Connection c = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nick\\Desktop\\2240-Repo\\ProducePOS\\src\\sample\\ProductBase.db");
+            Connection c = DriverManager.getConnection("jdbc:sqlite:ProductBase.db");
             Statement s = c.createStatement();
             ResultSet r = s.executeQuery("SELECT * FROM pluTable");
             while(r.next() && !isFound){

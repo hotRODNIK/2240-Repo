@@ -2,3 +2,4 @@ Larman, Craig. "Applying UML and Patterns." Pearson Education, 2005. => Helped w
 Amazon and Produce Codes Website for Produce Codes
 http://www.java2s.com/Code/Java/JavaFX/Stagecloseevent.htm => Used for documentation on how to close a single stage
 SQLite Databases Lecture Demo => Used for documentation on how to connect to a database
+http://www.sqlitetutorial.net/sqlite-java/sqlite-jdbc-driver/ => Documentation for the SQLite JDBC

@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import java.text.DecimalFormat;
 
 public class Controller {
+    // Fields which correspond to objects on the GUI or decimal formatting,
+    // which are referenced to display output, get input or change properties
     public javafx.scene.control.TextField userIn;
     public javafx.scene.control.TextField passIn;
     public javafx.scene.control.TextField codeIn;
@@ -20,10 +22,12 @@ public class Controller {
     public javafx.scene.control.Button scan;
     private static DecimalFormat df = new DecimalFormat("#.##");
 
+    // When invoked, this closes the entire system
     @FXML public void handleLoginExit(){
         System.exit(0);
     }
 
+    // When invoked, this logs a user into the system
     @FXML public void handleLogin() throws Exception{
         String user = userIn.getText();
         String pass = passIn.getText();
@@ -40,6 +44,7 @@ public class Controller {
         }
     }
 
+    // When invoked, this handles the process involved in scanning an item
     @FXML public void handleScan() throws Exception{
         String code = codeIn.getText();
         codeIn.clear();
@@ -57,6 +62,7 @@ public class Controller {
             new StartBadCode().start();
     }
 
+    // When invoked, this voids an entire sale
     @FXML public void voidAll(){
         SystemLogic.voidAll();
         subTotal.clear();
@@ -70,20 +76,24 @@ public class Controller {
         scan.setDisable(false);
     }
 
+    // Handles closure of the Main Screen
     @FXML public void handleMainScreenExit(){
         StartMain.killProcess();
     }
 
+    // Handles the transition from the Main Screen to the Sale Screen
     @FXML public void handleSaleScreen()throws Exception{
         new StartSale().start();
         StartMain.killProcess();
     }
 
+    // Handles transition from the Sale Screen to the Main Screen
     @FXML public void handleToMain()throws Exception{
         StartSale.killProcess();
         new StartMain().start();
     }
 
+    // Handles everything involved in calculating amount owing, change and amount paid
     @FXML public void handleFinish() throws Exception{ // click finish once to display amount owed, click again to calculate change
         try {
             scan.setDisable(true);
@@ -99,28 +109,32 @@ public class Controller {
         }
     }
 
-    @FXML public void quitError(){
-        StartError.killProcess();
-    }
+    // Handles closure of the error form
+    @FXML public void quitError(){ StartError.killProcess(); }
 
+    // Handles closure of the bad PLU form
     @FXML public void quitBadCode(){
         StartBadCode.killProcess();
     }
 
+    // Handles closure of the bad login form
     @FXML public void quitBadLogin(){
         StartBadLogin.killProcess();
     }
 
+    // Handles transition from Main Screen to PLU Lookup
     @FXML public void launchLookup() throws Exception {
         StartMain.killProcess();
         new StartLookup().start();
     }
 
+    // Handles closure of the PLU Lookup window
     @FXML public void handleLookupExit()throws Exception{
         StartLookup.killProcess();
         new StartMain().start();
     }
 
+    // Handles everything involved in a PLU Lookup query
     @FXML public void handleQuery() throws Exception {
         boolean found = SystemLogic.lookup(query.getText());
         if (found)

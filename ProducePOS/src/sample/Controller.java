@@ -14,9 +14,10 @@ public class Controller {
     public javafx.scene.control.TextField change;
     public javafx.scene.control.TextField query;
     public javafx.scene.control.TextArea productNames;
+    public javafx.scene.control.TextArea out;
     public javafx.scene.control.Button pay;
     public javafx.scene.control.Button voidAll;
-    public javafx.scene.control.TextArea out;
+    public javafx.scene.control.Button scan;
     private static DecimalFormat df = new DecimalFormat("#.##");
 
     @FXML public void handleLoginExit(){
@@ -66,6 +67,7 @@ public class Controller {
         total.clear();
         pay.setDisable(true);
         voidAll.setDisable(true);
+        scan.setDisable(false);
     }
 
     @FXML public void handleMainScreenExit(){
@@ -84,7 +86,7 @@ public class Controller {
 
     @FXML public void handleFinish() throws Exception{ // click finish once to display amount owed, click again to calculate change
         try {
-
+            scan.setDisable(true);
             total.setText(df.format(SystemLogic.calcTotal()));
             tax.setText(df.format(SystemLogic.getTotal() - SystemLogic.getSubTotal()));
             if (paid.getText().equals(""))

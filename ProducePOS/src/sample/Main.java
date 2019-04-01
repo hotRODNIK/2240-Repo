@@ -15,7 +15,7 @@ public class Main extends Application {
         primaryStage.setResizable(false);
         primaryStage.show();
     }
-    // What u need to login... userid: bsmith password: lorem, alt check the db... any login/pass will work
+
     public static void main(String[] args) {
         launch(args);
     }

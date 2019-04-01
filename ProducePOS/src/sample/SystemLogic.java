@@ -1,6 +1,5 @@
 package sample;
 
-import org.junit.*;
 import java.sql.*;
 import java.text.DecimalFormat;
 

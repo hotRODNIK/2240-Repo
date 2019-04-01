@@ -23,7 +23,7 @@ public class Controller {
         System.exit(0);
     }
 
-   @FXML public void handleLogin() throws Exception{
+    @FXML public void handleLogin() throws Exception{
         String user = userIn.getText();
         String pass = passIn.getText();
         boolean login = SystemLogic.login(user, pass);
@@ -68,7 +68,7 @@ public class Controller {
         voidAll.setDisable(true);
     }
 
-    @FXML void handleMainScreenExit(){
+    @FXML public void handleMainScreenExit(){
         StartMain.killProcess();
     }
 
@@ -82,7 +82,7 @@ public class Controller {
         new StartMain().start();
     }
 
-    @FXML public void handleFinish() throws Exception { // click finish once to display amount owed, click again to calculate change
+    @FXML public void handleFinish() throws Exception{ // click finish once to display amount owed, click again to calculate change
         try {
 
             total.setText(df.format(SystemLogic.calcTotal()));
@@ -114,7 +114,7 @@ public class Controller {
         new StartLookup().start();
     }
 
-    @FXML void handleLookupExit()throws Exception{
+    @FXML public void handleLookupExit()throws Exception{
         StartLookup.killProcess();
         new StartMain().start();
     }

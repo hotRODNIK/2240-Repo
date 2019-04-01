@@ -1,5 +1,6 @@
 package sample;
 
+import org.junit.*;
 import java.sql.*;
 import java.text.DecimalFormat;
 
@@ -21,7 +22,7 @@ class SystemLogic {
         return subTotal;
     }
 
-  static void voidAll(){
+    static void voidAll(){
         total = 0.0;
         subTotal = 0.0;
         subTotal = 0.0;

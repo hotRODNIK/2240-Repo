@@ -19,11 +19,11 @@ public class Controller {
     public javafx.scene.control.TextArea out;
     private static DecimalFormat df = new DecimalFormat("#.##");
 
-    @FXML void handleLoginExit(){
+    @FXML public void handleLoginExit(){
         System.exit(0);
     }
 
-    @FXML void handleLogin() throws Exception{
+   @FXML public void handleLogin() throws Exception{
         String user = userIn.getText();
         String pass = passIn.getText();
         boolean login = SystemLogic.login(user, pass);
@@ -39,7 +39,7 @@ public class Controller {
         }
     }
 
-    @FXML void handleScan() throws Exception{
+    @FXML public void handleScan() throws Exception{
         String code = codeIn.getText();
         codeIn.clear();
         boolean isFound = SystemLogic.scan(code);
@@ -56,7 +56,7 @@ public class Controller {
             new StartBadCode().start();
     }
 
-    @FXML void voidAll(){
+    @FXML public void voidAll(){
         SystemLogic.voidAll();
         subTotal.clear();
         productNames.clear();
@@ -72,17 +72,17 @@ public class Controller {
         StartMain.killProcess();
     }
 
-    @FXML void handleSaleScreen()throws Exception{
+    @FXML public void handleSaleScreen()throws Exception{
         new StartSale().start();
         StartMain.killProcess();
     }
 
-    @FXML void handleToMain()throws Exception{
+    @FXML public void handleToMain()throws Exception{
         StartSale.killProcess();
         new StartMain().start();
     }
 
-    @FXML void handleFinish() throws Exception { // click finish once to display amount owed, click again to calculate change
+    @FXML public void handleFinish() throws Exception { // click finish once to display amount owed, click again to calculate change
         try {
 
             total.setText(df.format(SystemLogic.calcTotal()));
@@ -97,19 +97,19 @@ public class Controller {
         }
     }
 
-    @FXML void quitError(){
+    @FXML public void quitError(){
         StartError.killProcess();
     }
 
-    @FXML void quitBadCode(){
+    @FXML public void quitBadCode(){
         StartBadCode.killProcess();
     }
 
-    @FXML void quitBadLogin(){
+    @FXML public void quitBadLogin(){
         StartBadLogin.killProcess();
     }
 
-    @FXML void launchLookup() throws Exception {
+    @FXML public void launchLookup() throws Exception {
         StartMain.killProcess();
         new StartLookup().start();
     }
@@ -119,7 +119,7 @@ public class Controller {
         new StartMain().start();
     }
 
-    @FXML void handleQuery() throws Exception {
+    @FXML public void handleQuery() throws Exception {
         boolean found = SystemLogic.lookup(query.getText());
         if (found)
             out.setText(SystemLogic.getLookName() + " " + SystemLogic.getLookPrice());

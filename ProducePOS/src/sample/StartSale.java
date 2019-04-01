@@ -7,7 +7,8 @@ import javafx.stage.Stage;
 
 class StartSale {
     private static Stage primaryStage = new Stage();
-    void start() throws Exception{
+    void start() throws Exception {
+        // Load the FXML file, create a stage and show it
         Parent root = FXMLLoader.load(getClass().getResource("SaleScreen.fxml"));
         primaryStage.setTitle("ProducePOS:Sale");
         primaryStage.setScene(new Scene(root, 700, 600));
@@ -15,6 +16,7 @@ class StartSale {
         primaryStage.show();
     }
 
+    // This method hides the stage when invoked
     static void killProcess(){
         primaryStage.close();
     }

@@ -7,6 +7,7 @@ import javafx.stage.Stage;
 
 class StartLookup {
     private static Stage primaryStage = new Stage();
+
     void start() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("PLULookup.fxml"));
         primaryStage.setTitle("PLU Lookup");
@@ -15,6 +16,7 @@ class StartLookup {
         primaryStage.show();
     }
 
+    // This method hides the stage when invoked
     static void killProcess(){
         primaryStage.close();
     }

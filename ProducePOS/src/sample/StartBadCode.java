@@ -7,7 +7,9 @@ import javafx.stage.Stage;
 
 class StartBadCode {
     private static Stage primaryStage = new Stage();
+
     void start() throws Exception {
+        // Load FXML file, create a stage and display it
         Parent root = FXMLLoader.load(getClass().getResource("InvalidCode.fxml"));
         primaryStage.setTitle("Invalid Code");
         primaryStage.setScene(new Scene(root, 330, 150));
@@ -15,6 +17,7 @@ class StartBadCode {
         primaryStage.show();
     }
 
+    // Hides the stage when invoked
     static void killProcess(){
         primaryStage.close();
     }

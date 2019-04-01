@@ -29,15 +29,18 @@ public class Controller {
 
     // When invoked, this logs a user into the system
     @FXML public void handleLogin() throws Exception{
+        // Get username and password
         String user = userIn.getText();
         String pass = passIn.getText();
-        boolean login = SystemLogic.login(user, pass);
+        boolean login = SystemLogic.login(user, pass); // returns true if found, false if not
         if (login) {
+            // If the login is found, let the user have access to the system
             new StartMain().start();
             userIn.clear();
             passIn.clear();
         }
         else {
+            // Else, notify the user they are not allowed access
             new StartBadLogin().start();
             userIn.clear();
             passIn.clear();
@@ -46,24 +49,29 @@ public class Controller {
 
     // When invoked, this handles the process involved in scanning an item
     @FXML public void handleScan() throws Exception{
+        // Get the PLU
         String code = codeIn.getText();
         codeIn.clear();
-        boolean isFound = SystemLogic.scan(code);
+        boolean isFound = SystemLogic.scan(code); // returns true if found, false if not
         if (isFound){
+            // Get the prices, product name and calculate subtotal
             String info = SystemLogic.getName();
             double itemPrice = SystemLogic.getItemPrice();
             double sub = SystemLogic.calcSubTotal();
+
+            // Output results and enable buttons
             productNames.setText(productNames.getText() + info + " " + itemPrice + "\n" );
             subTotal.setText(df.format(sub));
             pay.setDisable(false);
             voidAll.setDisable(false);
         }
         else
-            new StartBadCode().start();
+            new StartBadCode().start(); // Let the user know the code isn't in the system
     }
 
     // When invoked, this voids an entire sale
     @FXML public void voidAll(){
+        // Reset all values, clear all outputs, and reset buttons
         SystemLogic.voidAll();
         subTotal.clear();
         productNames.clear();
@@ -96,15 +104,17 @@ public class Controller {
     // Handles everything involved in calculating amount owing, change and amount paid
     @FXML public void handleFinish() throws Exception{ // click finish once to display amount owed, click again to calculate change
         try {
+            // Disable the scan button, and display tax
             scan.setDisable(true);
             total.setText(df.format(SystemLogic.calcTotal()));
             tax.setText(df.format(SystemLogic.getTotal() - SystemLogic.getSubTotal()));
             if (paid.getText().equals(""))
-                paid.setText("Please enter an amount");
+                paid.setText("Please enter an amount"); // If no amount has been entered, prompt an amount
             else
-                change.setText(SystemLogic.pay(Double.parseDouble(paid.getText())));
+                change.setText(SystemLogic.pay(Double.parseDouble(paid.getText()))); // Else display the change due
         }
         catch (NumberFormatException e){
+            // Handle any invalid inputs
             new StartError().start();
         }
     }
@@ -136,10 +146,11 @@ public class Controller {
 
     // Handles everything involved in a PLU Lookup query
     @FXML public void handleQuery() throws Exception {
+        // Returns true if found, false if not
         boolean found = SystemLogic.lookup(query.getText());
         if (found)
-            out.setText(SystemLogic.getLookName() + " " + SystemLogic.getLookPrice());
+            out.setText(SystemLogic.getLookName() + " " + SystemLogic.getLookPrice()); // If found, display product info
         else
-            out.setText("Not in the system");
+            out.setText("Not in the system"); // Else, notify the user their query wasn't found
     }
 }

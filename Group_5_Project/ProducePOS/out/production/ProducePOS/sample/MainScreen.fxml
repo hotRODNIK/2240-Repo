@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0"
+      prefWidth="343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controller">
+   <Label layoutX="40.0" layoutY="21.0" text="ProducePOS">
+      <font>
+         <Font name="Gabriola" size="59.0"/>
+      </font>
+   </Label>
+   <Label layoutX="271.0" layoutY="51.0" text="v1.0">
+      <font>
+         <Font name="Impact" size="22.0"/>
+      </font>
+   </Label>
+   <Button layoutX="112.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleSaleScreen" prefHeight="39.0"
+           prefWidth="119.0" text="Sale"/>
+   <Button layoutX="112.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleMainScreenExit" prefHeight="39.0"
+           prefWidth="119.0" text="Quit"/>
+   <Button layoutX="112.0" layoutY="159.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" text="PLU Lookup"
+           onAction="#launchLookup"/>
+</Pane>

@@ -1,0 +1,485 @@
+PS C:\Users\Nick\Desktop\2240-Repo> git log
+commit c87475bd1e712e423d128617af00951c9ca449fa (HEAD -> master, origin/master, origin/HEAD)
+Author: Nick <tnabguy@gmail.com>
+Date:   Wed Apr 3 14:12:41 2019 -0400
+
+    Report added
+
+commit 71c1ba99482292e01a1a6cfe743ce57a76b614be
+Author: Nick <tnabguy@gmail.com>
+Date:   Tue Apr 2 18:56:44 2019 -0400
+
+    updated
+
+commit f9b8d98d2e35b41cf16f51fe3f4a4ae37b5a4968
+Author: Nick <tnabguy@gmail.com>
+Date:   Tue Apr 2 18:53:06 2019 -0400
+
+    fixed umls
+
+commit db3823a38c0bd1fc9c7561eefc7f600a14382dbf
+Merge: a69ace3 7b485dc
+Author: Nick Eekhof <44624624+hotRODNIK@users.noreply.github.com>
+Date:   Tue Apr 2 17:04:40 2019 -0400
+
+    Merge pull request #3 from naazkaur/master
+
+    Add files via upload
+
+commit 7b485dce66fe944d768a426c2dae07d453f22a71
+Author: naazkaur <45434787+naazkaur@users.noreply.github.com>
+Date:   Tue Apr 2 17:04:15 2019 -0400
+
+    Add files via upload
+
+    few more lines added
+
+commit a69ace36af3c78070528c4b95ae35961eec120f3
+Merge: ea1da02 001b02f
+Author: Nick Eekhof <44624624+hotRODNIK@users.noreply.github.com>
+Date:   Tue Apr 2 17:03:09 2019 -0400
+
+    Merge pull request #2 from naazkaur/master
+
+    Add files via upload
+
+commit 001b02f4c492a81e194dc8257071088347a8d811
+Author: naazkaur <45434787+naazkaur@users.noreply.github.com>
+Date:   Tue Apr 2 17:00:58 2019 -0400
+
+    Add files via upload
+
+    few changes made
+
+commit ea1da02862d646c5a2d1b38b2b10aee12b5d60e9
+Merge: f4ebd2e 9134ab3
+Author: Nick Eekhof <44624624+hotRODNIK@users.noreply.github.com>
+Date:   Tue Apr 2 16:55:47 2019 -0400
+
+    Merge pull request #1 from naazkaur/master
+
+    Add files via upload
+
+commit 9134ab38b6184dc4b57c76800b9c3947f489bfe8
+Author: naazkaur <45434787+naazkaur@users.noreply.github.com>
+Date:   Tue Apr 2 16:54:01 2019 -0400
+
+    Add files via upload
+
+    DOcs
+
+commit f4ebd2edb7a6c9f6846708f725af0eaff53dbb70
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 15:56:54 2019 -0400
+
+    Fully commented and built => The final version
+
+commit b6b6012ea6edd7c7113d3e27f01d6320509cc6c0
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 15:27:06 2019 -0400
+
+    13/16 commented
+
+commit b8e36f64e90a7e76829b49d72b82efb78a0f14be
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 15:14:28 2019 -0400
+
+    2/3 commented
+
+commit ffef132a758ffb4c68dc8052b69dbc8c5119e8f7
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 15:04:33 2019 -0400
+
+    Halfway commented...
+
+commit f7244b9f13d4a8f07b57d92e11fae34238fe2e3c
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 13:59:30 2019 -0400
+
+    Testing added
+
+commit f776bac619f0b7d72e8a8789a3c72dc72cd31fef
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 13:29:07 2019 -0400
+
+    Tested and debugged... sans commenting addendum one jar file
+
+commit bc6fa203cef7a0afd1ed669c4cad7382ce3ae860
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 13:16:46 2019 -0400
+
+    The fully tested and debugged version
+
+commit 03108858ed8144fbcbd02b0289552991c156ea2e
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 12:42:55 2019 -0400
+
+    After testing
+
+commit b6c7bceda2d33780d59b753c6cbc879cb449f541
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 12:04:52 2019 -0400
+
+    The final untested version
+
+commit c7a56fca5f510752026e5eec1fe317f8a0f03ad0
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 11:29:24 2019 -0400
+
+    Updated
+
+commit a8fbd457feec86317737d0085ac9217023f60003
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 11:28:08 2019 -0400
+
+    sdf
+
+commit 2ddc8c850544dc202596da8d328c8420967ab459
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 11:17:56 2019 -0400
+
+    The beta release which will run on any machine
+
+commit ffb769615ce31a21b704d06dfbdfcce1bc9124b8
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 10:52:27 2019 -0400
+
+    Update
+
+commit 53e3ff103d52dfca285672809a0d9fa8960af139
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Apr 1 08:00:38 2019 -0400
+
+    Beta Release of ProducePOS
+
+commit 3c70d80199333b0806bcc58a7a5f3f61f315be8e
+Author: Nick <tnabguy@gmail.com>
+Date:   Fri Mar 29 15:18:51 2019 -0400
+
+    sdkfh
+
+commit 1f13c428cf121796d5521c429477697d4a5df23d
+Author: Nick <tnabguy@gmail.com>
+Date:   Fri Mar 29 12:35:16 2019 -0400
+
+    Updated
+
+commit 546040f91e6af2226eb8c0ae3316ed0873b18c1d
+Author: Nick <tnabguy@gmail.com>
+Date:   Fri Mar 29 12:33:44 2019 -0400
+
+    Stable release
+
+commit 28dad4f273a78ad417978d8d0839898967278ff8
+Author: Nick <tnabguy@gmail.com>
+Date:   Fri Mar 29 12:25:46 2019 -0400
+
+    fdshgfd
+
+commit b9f84a4f73491ce4a42ab1911b4ac9fcbfc05f2a
+Author: Nick <tnabguy@gmail.com>
+Date:   Fri Mar 29 11:43:52 2019 -0400
+
+    stable release
+
+commit a8450240e3b5132600e8851ccef42a4fb03d0e66
+Author: Nick <tnabguy@gmail.com>
+Date:   Fri Mar 29 11:24:09 2019 -0400
+
+    sd
+
+commit 5218a2b409f4d0557347647147b62839560911bc
+Author: Nick <tnabguy@gmail.com>
+Date:   Fri Mar 29 08:12:39 2019 -0400
+
+    sdf
+
+commit 14583d66dfa33be21d14b50e7918df446908f0da
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 21:05:07 2019 -0400
+
+    dfdfg
+
+commit ec83636db80d9e47a3ff7bcca479baf7243fd68d
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 20:14:00 2019 -0400
+
+    Stable GUI version... fixed a bug
+
+commit 38b76ecbb60b7aaadacb7cf98e3a97ed09514806
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 19:52:00 2019 -0400
+
+    Basic functionality... stable release to go back to if needed
+
+commit 7ea1ee5043613100434bcdc0d43052224946f125
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 19:45:16 2019 -0400
+
+    The GUIs are finally done
+
+commit 8eb974473b58c9e895e143ef3055c09fb313e5ed
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 19:29:42 2019 -0400
+
+    udate
+
+commit 35c572cf51b075be3859783217450f5fe1ad600d
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 19:15:27 2019 -0400
+
+    update
+
+commit e4b2446a1cafca142051ce5516928e6393be0c31
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 19:13:15 2019 -0400
+
+    Latest
+
+commit e007eb27e1a5aed5e799810c20b58b0fadca306d
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 19:08:22 2019 -0400
+
+    kjhfds
+
+commit c2f95f88271e3fd459c255af1d81de2ff63c7716
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 19:01:30 2019 -0400
+
+    lol
+
+commit b45005731d5ef48ccee933d3b2cab020fae3c962
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 18:55:05 2019 -0400
+
+    Add
+
+commit 8e09a881cfc2b52dbd56d154422a6b515fe9a16f
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 18:46:55 2019 -0400
+
+    Report
+
+commit b0b46ed84efa59e5e49879f6b2a1721674c106c5
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 15:41:53 2019 -0400
+
+    sdf
+
+commit 2ecac715c19403b257bc0037fa882ab26d4236db
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 15:41:10 2019 -0400
+
+    sdf
+
+commit f9e048ebd9cb88ec8ca8f3b98ab710c6e5beca11
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 15:36:54 2019 -0400
+
+    shes comin bud
+
+commit d114941615af70373a21be3f163b719bdd598a9f
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 14:59:28 2019 -0400
+
+    updaye
+
+commit cd03c4993e043316a11b19c11b62508bd61a99ec
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 14:22:58 2019 -0400
+
+    update
+
+commit 72e1baf835e63e26618ea9085f6c2314b6b9c743
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 14:02:29 2019 -0400
+
+    update
+
+commit 998aa73163e538833ab5c18fcb889974e5b3450b
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 13:51:41 2019 -0400
+
+    latest
+
+commit 255cbc02b142bdf65db992ea10c2ea56d60e5386
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 13:49:38 2019 -0400
+
+    updated uml
+
+commit 9a1e3a33f79db2d00e5b0fa689001cf793c12692
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 28 11:05:25 2019 -0400
+
+    Updated v
+
+commit 1bdf7b5cbc2ed0ddc251591b3e5505770d5f7efd
+Author: Nick <tnabguy@gmail.com>
+Date:   Tue Mar 26 18:55:51 2019 -0400
+
+    Lets keep this place organized
+
+commit 48009b3c2d781702ea87bf1122620f13bbf0e95a
+Author: Nick <tnabguy@gmail.com>
+Date:   Tue Mar 26 18:54:54 2019 -0400
+
+    dfkhdf
+
+commit 8b4675361ce3738d2b1c442c8c762c896fe9bfe9
+Author: Nick <tnabguy@gmail.com>
+Date:   Tue Mar 26 18:51:55 2019 -0400
+
+    Lets keep everything nice and organized
+
+commit 6222fec850c7f0d1958be37a06491e66f1839b50
+Author: Nick <tnabguy@gmail.com>
+Date:   Tue Mar 26 18:48:13 2019 -0400
+
+    Project files
+
+commit 50a1582009abcad9773d6f69246e5db98be796b5
+Author: Nick <tnabguy@gmail.com>
+Date:   Tue Mar 26 18:28:48 2019 -0400
+
+    sd
+
+commit c44a0e5103015dd66ad87cfee686e43a9c042428
+Merge: 9589f3f 26a5dfe
+Author: Nick <tnabguy@gmail.com>
+Date:   Tue Mar 26 16:22:27 2019 -0400
+
+    Merge branch 'master' of https://github.com/hotRODNIK/2240-Repo
+
+commit 9589f3f337eefc64d138317de9a3687004045ce0
+Author: Nick <tnabguy@gmail.com>
+Date:   Tue Mar 26 16:22:07 2019 -0400
+
+    The hamcrest core, JUnit 4 and ui mockups
+
+commit 26a5dfe844c1cc9d55471079f6c1021faec0cf73
+Author: Nick Eekhof <44624624+hotRODNIK@users.noreply.github.com>
+Date:   Tue Mar 26 16:19:01 2019 -0400
+
+    Delete dfgdfg.txt
+
+commit 539ee93816817dc804cffb7a0b1f38f84a238255
+Author: Nick <tnabguy@gmail.com>
+Date:   Tue Mar 26 16:11:56 2019 -0400
+
+    tex
+
+commit 2cbb6dabceed903b1610dbfe5529100b4ec746fa
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 21 14:32:38 2019 -0400
+
+    Final fxmls
+
+commit a245b42f298b48e29dd54ab82a8c4e0ddcdc7c8a
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 21 14:11:30 2019 -0400
+
+    More fxml files
+
+commit 3011afb3ec3f9b9e194ad10216ae2a5abef454e8
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 21 13:49:30 2019 -0400
+
+    The login screen
+
+commit 919b83838ac8a8c84a717380fb8c2fab0d5fb5e1
+Author: Nick Eekhof <44624624+hotRODNIK@users.noreply.github.com>
+Date:   Tue Mar 19 13:53:40 2019 -0400
+
+    Delete Welcome.java
+
+commit f69a138a0b94cc971ebe215e744389c99dc3e40c
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Mar 18 20:18:51 2019 -0400
+
+    updated reference
+
+commit df8710a70a7ca814c1019c47f8a04c0016cf7fe2
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Mar 18 14:32:52 2019 -0400
+
+    The finished databses
+
+commit 9e89277c81afa7f927cf1934aaaeb3294f2e44f4
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Mar 18 12:38:03 2019 -0400
+
+    The initial databases
+
+commit 7870109a2c0b5a9edd536f1d7d835bf5bf54acc3
+Author: Nick Eekhof <44624624+hotRODNIK@users.noreply.github.com>
+Date:   Sun Mar 17 17:05:18 2019 -0400
+
+    Add files via upload
+
+commit b0f6fdcb43311eec8c72e6cab95e9ac9d6b746ed
+Author: Nick Eekhof <44624624+hotRODNIK@users.noreply.github.com>
+Date:   Sun Mar 17 17:05:07 2019 -0400
+
+    Delete SequenceDiagram.pdf
+
+commit 8099d08703957ef0fef42d2e05f89bac5ddf51cb
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 14 09:02:15 2019 -0400
+
+    This is the API you'll need to work with SQLite databases
+
+commit a1ba156b7c3a0324f111cbf0355c1688f2cc22cb
+Author: Nick Eekhof <44624624+hotRODNIK@users.noreply.github.com>
+Date:   Mon Mar 11 11:39:06 2019 -0400
+
+    Delete file.txt
+
+commit f6c6ca5f00d649907d3e4988dfd502af7fae19e2
+Author: Nick <tnabguy@gmail.com>
+Date:   Mon Mar 11 11:36:28 2019 -0400
+
+    Random text file
+
+commit 6a471adb54289e713d9a4b221f46e3aa08b92dce
+Author: Nick <tnabguy@gmail.com>
+Date:   Fri Mar 8 15:36:09 2019 -0500
+
+    References
+
+commit 4c7d6d12ec202ebd6f78c6c6e6403efcb7702aea
+Author: Nick <tnabguy@gmail.com>
+Date:   Fri Mar 8 15:30:46 2019 -0500
+
+    These are our UML diagrams
+
+commit 8bd93a4db4e5c50ed72e93c2a6f0d47642cc9c19
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 7 19:05:46 2019 -0500
+
+    Updated readme
+
+commit 9d1e960175c5fc54f7f9812100daa613a988d076
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 7 10:07:34 2019 -0500
+
+    Compile and run this
+
+commit e71a37f50b210fa9dad9907d420a4b9afefe0def
+Author: Nick Eekhof <44624624+hotRODNIK@users.noreply.github.com>
+Date:   Thu Mar 7 09:54:08 2019 -0500
+
+    Delete Hello.py
+
+commit 9828aa8ca82056c5e72972e6c05370a5fc832577
+Author: Nick Eekhof <44624624+hotRODNIK@users.noreply.github.com>
+Date:   Thu Mar 7 09:53:49 2019 -0500
+
+    Create README.md
+
+commit c119fe219567c1092774d2eb2926a836fa62413d
+Author: Nick <tnabguy@gmail.com>
+Date:   Thu Mar 7 09:53:05 2019 -0500
+
+    Test
+(END)
